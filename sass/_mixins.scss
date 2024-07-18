@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+@mixin responsive-font($size, $line-height, $size-mobile, $line-height-mobile) {
+  font-size: $size;
+  line-height: $line-height;
+
+  @media screen and (max-width: $max-width-mobile) {
+    font-size: $size-mobile;
+    line-height: $line-height-mobile;
+  }
+}
